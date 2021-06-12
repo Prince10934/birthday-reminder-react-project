@@ -1,23 +1,27 @@
-import React from "react";
-const List = ({ people }) => {
+import React,{useState,useEffect} from "react";
+const List = ({ data }) => {
+  const [people,setPeople]=useState(data);
+  const removeItem=(e)=>{
+     setPeople(()=>{
+       return people.filter((person)=>{
+         return Number(e.target.value)!==person.id;
+       })
+     })
+  }
   return (
     <>
-      {people.map((person,index) => {
+      {people.map((person) => {
+        const {id,name,image,age}=person;
         return (
-          <article>
-            <div key={person.id} className="row">
-              <div className="col">
-                <img src={person.image} alt={person.name} />
-              </div>
-              <div className="col">
-                <h2>{person.name}</h2>
-                <p>{person.age} years</p>
-              </div>
-              <div className='col end'>
-                  <button>Remove</button>
-              </div>
+          <article key={id} className='box' >
+            <img src={image} alt={name} />
+            <div>
+              <h3>{name}</h3>
+              <p>{age}</p>
             </div>
-            {index!==people.length-1?<hr/>:''}
+            <div className='item'>
+            <button className='btn end' value={id} onClick={removeItem}>Remove</button>
+            </div>
           </article>
         );
       })}

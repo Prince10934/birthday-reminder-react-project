@@ -5,12 +5,12 @@ const App=()=>{
     const [btnText,setBtnText]=useState('Remove All Items');
     return (
         <>
-        <div className='container'>
-            <div className='box'>
-                <List people={data}/>
-                <button>{}</button>
-            </div>
-        </div>
+        <main >
+            <section className='container'>
+                <List data={data}/>
+                <button className='btn middle'>{btnText}</button>
+            </section>
+        </main>
         </>
     )
 }
