@@ -14,7 +14,7 @@ const List=({data})=>{
     }
     return (
         <main className='container'>
-            <Add/>
+            <Add setItem={setItem}/>
             {
                 items.map((item)=>{
                     return (
