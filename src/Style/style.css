@@ -1,16 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  text-align:center;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: pink;
 }
 #root {
   display: flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  background-color: pink;
   padding:1rem;
 }
 .header{
@@ -45,6 +46,7 @@ body {
   }
   .icon{
     width:3.5rem;
+    cursor: pointer;
     object-fit: scale-down;
   }
   .subItem{
