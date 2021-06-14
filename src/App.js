@@ -1,16 +1,10 @@
-import React,{useState} from 'react';
-import List from './List';
-import data from './data'
+import React from 'react'
+
+
 const App=()=>{
-    const [btnText,setBtnText]=useState('Remove All Items');
     return (
         <>
-        <main >
-            <section className='container'>
-                <List data={data}/>
-                <button className='btn middle'>{btnText}</button>
-            </section>
-        </main>
+        <h1>Hello</h1>
         </>
     )
 }
