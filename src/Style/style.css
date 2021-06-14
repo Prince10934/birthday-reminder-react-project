@@ -40,11 +40,22 @@ body {
 .info{
     margin-left:1rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-}
-.image{
+  }
+  .icon{
+    width:3.5rem;
+    object-fit: scale-down;
+  }
+  .subItem{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    flex-grow:1;
+  }
+  .image{
     border-radius:50%;
-    object-fit: cover;
+    object-fit: fill;
     width:7rem;
     height:7rem;
 }
@@ -65,9 +76,15 @@ body {
   .info{
     margin-top:1rem;
   }
+  .icon{
+    width:2.5rem;
+  }
 }
 @media (max-width:200px)
 {
+  .icon{
+    width:1.5rem;
+  }
   .image{
     width:5rem;
     height:5rem;

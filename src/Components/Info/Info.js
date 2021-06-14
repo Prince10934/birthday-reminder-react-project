@@ -4,7 +4,7 @@ import Age from "./Age";
 const Info = ({ name, age }) => {
   return (
     <>
-      <div className="info">
+      <div className="info" >
         <Name name={name} />
         <Age age={age} />
       </div>
