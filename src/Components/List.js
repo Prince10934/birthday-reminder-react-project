@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import Item from './Item'
+import Add from './Input';
 const List=({data})=>{
     const [items,setItem]=useState(data);
     const removeItem=(e)=>{
@@ -13,6 +14,7 @@ const List=({data})=>{
     }
     return (
         <main className='container'>
+            <Add/>
             {
                 items.map((item)=>{
                     return (

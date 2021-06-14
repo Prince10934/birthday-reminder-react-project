@@ -20,6 +20,7 @@ body {
     padding:1rem;
     margin:2rem;
 }
+
 .container{
     display: flex;
     border-radius: 0.5rem;
@@ -37,6 +38,48 @@ body {
     display:flex;
     padding:0.5rem;
     margin:1rem 0 0 0;
+}
+.formItem{
+  width:97%;
+  border:0.3rem solid black;
+  background-color:rgba(255, 255, 123,0.5);
+  border-radius: 0.5rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0.5rem;
+  margin:1rem 0 0 0;
+}
+.formHeader{
+  background-color: violet;
+  color:whitesmoke;
+  border-radius:0.5rem;
+  padding:1rem;
+}
+.form{
+  padding:1rem;
+  width:80%;
+  display: flex;
+  flex-direction: column;
+}
+.form input{
+  border:none;
+  outline:none;
+  border-radius: 0.2rem;
+  display: block;
+  padding:0.2rem;
+  font-size:x-large;
+}
+.form input[type=submit]{
+  margin:1rem;
+  cursor: pointer;
+  border-color: white;
+}
+label{
+  display: block;
+  padding:0.5rem;
+  text-align: start;
 }
 .info{
     margin-left:1rem;
